@@ -3,11 +3,11 @@ import cv2 as cv
 import numpy as np
 
 people = []
-for i in os.listdir(r'C:\Users\Admin\Mr.Hung\OpenCV\archive\train'):
+for i in os.listdir(r'archive\train'):
     people.append(i)
 
-DIR = r'C:\Users\Admin\Mr.Hung\OpenCV\archive\train'
-haar_cascade = cv.CascadeClassifier('haar_face.xml')
+DIR = r'archive\train'
+haar_cascade = cv.CascadeClassifier('basic\haar_face.xml')
 features = []
 labels = []
 

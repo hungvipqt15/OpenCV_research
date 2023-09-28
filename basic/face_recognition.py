@@ -2,10 +2,10 @@ import numpy as np
 import cv2 as cv
 import os
 
-haar_cascade = cv.CascadeClassifier('haar_face.xml')
+haar_cascade = cv.CascadeClassifier('basic\haar_face.xml')
 
 people = []
-for i in os.listdir(r'C:\Users\Admin\Mr.Hung\OpenCV\archive\train'):
+for i in os.listdir(r'archive\train'):
     people.append(i)
 # features = np.load('features.npy',allow_pickle=True)
 # labels = np.load('labels.npy', allow_pickle=True)
@@ -13,7 +13,7 @@ for i in os.listdir(r'C:\Users\Admin\Mr.Hung\OpenCV\archive\train'):
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread(r"C:\Users\Admin\Mr.Hung\OpenCV\archive\train\madonna\httpresizeparismatchladmediafrrffffffcentermiddleimgvarnewsstorageimagesparismatchpeopleazmadonnafreFRMadonnajpg.jpg")
+img = cv.imread(r"archive\train\madonna\httpiamediaimdbcomimagesMMVBMTANDQNTAxNDVeQTJeQWpwZBbWUMDIMjQOTYVUXCRALjpg.jpg")
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Person', gray)
