@@ -5,6 +5,7 @@ img = cv.imread('Photos\3.jpg')
 cv.imshow('Cats', img)
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+##git
 cv.imshow('Gray', gray)
 
 # laplacian
