@@ -6,7 +6,7 @@ cv.imshow('Cats', img)
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray', gray)
-
+#
 # laplacian
 lap = cv.Laplacian(gray,cv.CV_64F)
 lap = np.uint8(np.absolute(lap))
